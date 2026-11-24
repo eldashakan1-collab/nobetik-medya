@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>İki ibre — eş durumu</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#93C5FD}a:hover{color:#BFDBFE}
+</style>
+</helmet>
+<div style="width:1080px;height:1350px;box-sizing:border-box;background:radial-gradient(circle at 50% 36%,#1E3A8A 0%,#0F1B3D 55%,#0A1230 100%);font-family:Inter,sans-serif;color:#F8FAFC;padding:84px 92px 80px;display:flex;flex-direction:column;overflow:hidden">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <div style="font-size:32px;font-weight:800;letter-spacing:-0.5px;color:#FFFFFF">Nöbetik</div>
+    <div style="font-size:22px;font-weight:600;letter-spacing:3px;color:#93C5FD">EŞ DURUMU</div>
+  </div>
+
+  <div style="height:560px;display:flex;align-items:center;justify-content:center;margin-top:16px">
+    <svg width="540" height="540" viewBox="0 0 600 600" role="img" aria-label="Akrep ve yelkovanı tam üst üste duran bir saat">
+      <circle cx="300" cy="300" r="282" fill="#F8FAFC"/>
+      <circle cx="300" cy="300" r="282" fill="none" stroke="#FBBF24" stroke-width="6"/>
+      <g stroke="#1F2937" stroke-linecap="round">
+        <line x1="300" y1="40" x2="300" y2="74" stroke-width="8"/>
+        <line x1="560" y1="300" x2="526" y2="300" stroke-width="8"/>
+        <line x1="300" y1="560" x2="300" y2="526" stroke-width="8"/>
+        <line x1="40" y1="300" x2="74" y2="300" stroke-width="8"/>
+        <g stroke-width="4">
+          <line x1="430" y1="75" x2="418" y2="96"/>
+          <line x1="525" y1="170" x2="504" y2="182"/>
+          <line x1="525" y1="430" x2="504" y2="418"/>
+          <line x1="430" y1="525" x2="418" y2="504"/>
+          <line x1="170" y1="525" x2="182" y2="504"/>
+          <line x1="75" y1="430" x2="96" y2="418"/>
+          <line x1="75" y1="170" x2="96" y2="182"/>
+          <line x1="170" y1="75" x2="182" y2="96"/>
+        </g>
+      </g>
+      <g transform="rotate(33 300 300)">
+        <line x1="300" y1="320" x2="300" y2="96" stroke="#F59E0B" stroke-width="22" stroke-linecap="round"/>
+        <line x1="300" y1="330" x2="300" y2="70" stroke="#1D4ED8" stroke-width="9" stroke-linecap="round"/>
+      </g>
+      <circle cx="300" cy="300" r="16" fill="#1D4ED8"/>
+      <circle cx="300" cy="300" r="6" fill="#F8FAFC"/>
+    </svg>
+  </div>
+
+  <h1 style="margin:40px 0 0;font-family:Fraunces,serif;font-size:96px;line-height:1.0;font-weight:500;letter-spacing:-2px">Aynı nöbet.<br><span style="font-style:italic;font-weight:400;color:#FBBF24">Aynı izin.</span></h1>
+  <p style="margin:30px 0 0;font-size:29px;line-height:1.45;color:#CBD5E1;max-width:860px">Nöbetik eşleri aynı günlerde çalıştırmaya ve aynı günlerde boş bırakmaya çalışır; uyum %90'ın altına düşerse uyarır.</p>
+  <div style="margin-top:auto;display:flex;justify-content:space-between;font-size:22px;color:#93C5FD">
+    <span>Sağlıkçı çiftler için</span>
+    <span style="color:#FFFFFF;font-weight:700">nobetik.com</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
