@@ -11,12 +11,21 @@ svg{display:block}
 <svg id="s" width="1080" height="1920" viewBox="0 0 1080 1920">
   <defs>
     <linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B2A4E"/><stop offset="1" stop-color="#0F1B38"/></linearGradient>
+  
+    <radialGradient id="skinD" cx="0.45" cy="0.4" r="0.7"><stop offset="0" stop-color="#F8D6B4"/><stop offset="0.75" stop-color="#EDBE96"/><stop offset="1" stop-color="#D9A07A"/></radialGradient>
+    <radialGradient id="skinC" cx="0.45" cy="0.4" r="0.7"><stop offset="0" stop-color="#EBC29B"/><stop offset="0.75" stop-color="#D6A57C"/><stop offset="1" stop-color="#BF8962"/></radialGradient>
+    <linearGradient id="hairD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#57402F"/><stop offset="1" stop-color="#2A1B12"/></linearGradient>
+    <linearGradient id="hairC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34343D"/><stop offset="1" stop-color="#0E0E12"/></linearGradient>
+    <linearGradient id="dScrub" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2D4FA8"/><stop offset="1" stop-color="#16245A"/></linearGradient>
+    <linearGradient id="cScrub" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8CC0FC"/><stop offset="1" stop-color="#4A87E0"/></linearGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FCD34D" stop-opacity="0.22"/><stop offset="1" stop-color="#FCD34D" stop-opacity="0"/></radialGradient>
   </defs>
   <rect width="1080" height="1920" fill="#0B1430"/>
   <g id="cam">
     <!-- room -->
     <rect x="0" y="0" width="1080" height="1920" fill="url(#room)"/>
     <rect x="0" y="1450" width="1080" height="470" fill="#0A1228"/>
+    <circle cx="470" cy="1090" r="460" fill="url(#lamp)"/>
     <!-- window -->
     <rect x="110" y="420" width="360" height="380" rx="14" fill="#0E1A3A" stroke="#33466F" stroke-width="10"/>
     <rect id="sky" x="115" y="425" width="350" height="370" rx="10" fill="#14224A"/>
@@ -31,31 +40,72 @@ svg{display:block}
     <g id="bells"></g>
     <!-- Defne (sitting) -->
     <g id="defne">
-      <rect x="235" y="1060" width="190" height="200" rx="60" fill="#1E3A8A"/>
-      <path d="M300 1062 L330 1110 L360 1062 Z" fill="#F2C6A0"/>
-      <circle cx="330" cy="990" r="74" fill="#F2C6A0"/>
-      <path d="M256 985 Q262 905 330 902 Q400 905 404 985 Q392 940 330 935 Q270 940 256 985 Z" fill="#3B2A20"/>
-      <circle cx="330" cy="900" r="34" fill="#3B2A20"/>
-      <g id="dEyes"><ellipse id="dEl" cx="305" cy="992" rx="7" ry="8" fill="#111827"/><ellipse id="dEr" cx="356" cy="992" rx="7" ry="8" fill="#111827"/></g>
-      <path id="dMouth" d="M312 1030 Q330 1040 348 1030" stroke="#7C2D12" stroke-width="5" fill="none" stroke-linecap="round"/>
-      <circle cx="290" cy="1018" r="10" fill="#F9A8A8" opacity="0.5"/><circle cx="370" cy="1018" r="10" fill="#F9A8A8" opacity="0.5"/>
+      <rect x="212" y="1035" width="236" height="210" rx="44" fill="#0B1226" opacity="0.6"/>
+      <path d="M232 1250 Q230 1088 300 1068 L360 1068 Q430 1088 428 1250 Z" fill="url(#dScrub)"/>
+      <path d="M262 1110 Q258 1180 268 1250" stroke="#132158" stroke-width="4" fill="none" opacity="0.7"/>
+      <path d="M398 1110 Q402 1180 392 1250" stroke="#132158" stroke-width="4" fill="none" opacity="0.7"/>
+      <path d="M307 1038 L353 1038 L357 1082 Q330 1096 303 1082 Z" fill="url(#skinD)"/>
+      <path d="M303 1060 Q330 1076 357 1060 L357 1072 Q330 1090 303 1072 Z" fill="#B97C58" opacity="0.45"/>
+      <path d="M298 1070 L330 1118 L362 1070 Z" fill="url(#skinD)"/>
+      <path d="M294 1068 L330 1124 L366 1068" fill="none" stroke="#101C47" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M291 1074 Q276 1150 309 1180 M369 1074 Q384 1150 351 1180" stroke="#475569" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M309 1180 Q330 1198 351 1180" stroke="#475569" stroke-width="6" fill="none"/>
+      <circle cx="330" cy="1198" r="12" fill="#CBD5E1" stroke="#64748B" stroke-width="3"/>
+      <rect x="372" y="1152" width="36" height="42" rx="5" fill="none" stroke="#101C47" stroke-width="3"/>
+      <rect x="381" y="1134" width="6" height="30" rx="2" fill="#E5E7EB"/><rect x="391" y="1138" width="5" height="26" rx="2" fill="#F59E0B"/>
+      <rect x="252" y="1140" width="42" height="54" rx="6" fill="#F8FAFC"/><rect x="258" y="1149" width="30" height="11" rx="2" fill="#1D4ED8"/><rect x="258" y="1166" width="22" height="5" rx="2" fill="#94A3B8"/><rect x="258" y="1176" width="26" height="5" rx="2" fill="#94A3B8"/>
+      <circle cx="330" cy="893" r="37" fill="url(#hairD)"/>
+      <path d="M306 880 Q330 862 354 880" stroke="#7A5A42" stroke-width="3" fill="none" opacity="0.8"/>
+      <ellipse cx="264" cy="996" rx="11" ry="17" fill="url(#skinD)"/><ellipse cx="396" cy="996" rx="11" ry="17" fill="url(#skinD)"/>
+      <circle cx="264" cy="1012" r="3" fill="#F1F5F9"/><circle cx="396" cy="1012" r="3" fill="#F1F5F9"/>
+      <ellipse cx="330" cy="992" rx="66" ry="78" fill="url(#skinD)"/>
+      <rect x="311" y="921" width="38" height="10" rx="5" fill="#1D4ED8"/>
+      <path d="M262 996 Q256 912 330 906 Q404 912 398 996 Q393 954 362 942 Q342 962 300 950 Q272 960 262 996 Z" fill="url(#hairD)"/>
+      <path d="M298 926 Q330 914 374 930" stroke="#7A5A42" stroke-width="3" fill="none" opacity="0.8"/>
+      <path d="M268 986 Q262 1030 278 1052" stroke="#3B2A20" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M291 962 Q305 954 320 961" stroke="#3B2A20" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M340 961 Q355 954 369 962" stroke="#3B2A20" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse id="dWl" cx="305" cy="990" rx="14" ry="10" fill="#FFFFFF"/><ellipse id="dWr" cx="355" cy="990" rx="14" ry="10" fill="#FFFFFF"/>
+      <g id="dEyes"><ellipse id="dEl" cx="305" cy="991" rx="6.5" ry="7.5" fill="#4A2C17"/><ellipse id="dEr" cx="355" cy="991" rx="6.5" ry="7.5" fill="#4A2C17"/></g>
+      <circle cx="307.5" cy="988" r="2.2" fill="#FFFFFF"/><circle cx="357.5" cy="988" r="2.2" fill="#FFFFFF"/>
+      <path d="M290 985 Q305 975 320 984" stroke="#1F2937" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M340 984 Q355 975 370 985" stroke="#1F2937" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M330 998 Q325 1016 335 1020" stroke="#C08460" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="286" cy="1020" rx="13" ry="8" fill="#F28B82" opacity="0.28"/><ellipse cx="374" cy="1020" rx="13" ry="8" fill="#F28B82" opacity="0.28"/>
+      <path id="dMouth" d="M312 1034 Q330 1044 348 1034" stroke="#B4535A" stroke-width="5" fill="none" stroke-linecap="round"/>
     </g>
     <!-- Can (stajyer, standing) -->
+    
     <g id="can">
-      <rect x="-95" y="0" width="190" height="300" rx="70" fill="#60A5FA"/>
-      <path d="M-30 2 L0 50 L30 2 Z" fill="#E8B48C"/>
-      <circle cx="0" cy="-70" r="72" fill="#E8B48C"/>
-      <path d="M-74 -78 Q-70 -150 0 -148 Q74 -150 74 -80 Q50 -118 0 -116 Q-50 -118 -74 -78 Z" fill="#1F2937"/>
-      <ellipse cx="-25" cy="-66" rx="7" ry="8" fill="#111827"/><ellipse cx="25" cy="-66" rx="7" ry="8" fill="#111827"/>
-      <path id="cMouth" d="M-20 -30 Q0 -14 20 -30" stroke="#7C2D12" stroke-width="5" fill="none" stroke-linecap="round"/>
-      <rect x="-20" y="150" width="40" height="56" rx="6" fill="#DBEAFE"/>
-      <text x="0" y="186" text-anchor="middle" font-family="Inter" font-weight="800" font-size="20" fill="#1D4ED8">ST</text>
+      <path d="M-100 300 Q-102 42 -40 14 L40 14 Q102 42 100 300 Z" fill="url(#cScrub)"/>
+      <path d="M-66 80 Q-72 180 -62 300 M66 80 Q72 180 62 300" stroke="#3F7AD1" stroke-width="4" fill="none" opacity="0.7"/>
+      <path d="M-25 -16 L25 -16 L27 24 Q0 40 -27 24 Z" fill="url(#skinC)"/>
+      <path d="M-27 4 Q0 20 27 4 L27 16 Q0 34 -27 16 Z" fill="#A9714C" opacity="0.45"/>
+      <path d="M-34 16 L0 66 L34 16 Z" fill="url(#skinC)"/>
+      <path d="M-37 14 L0 72 L37 14" stroke="#3B82F6" stroke-width="5" fill="none" stroke-linejoin="round"/>
+      <path d="M-30 20 L-12 140 M30 20 L12 140" stroke="#1D4ED8" stroke-width="5" stroke-linecap="round"/>
+      <rect x="-32" y="138" width="64" height="74" rx="8" fill="#F8FAFC"/><rect x="-24" y="148" width="48" height="14" rx="3" fill="#1D4ED8"/>
+      <text x="0" y="192" text-anchor="middle" font-family="Inter" font-weight="800" font-size="14" fill="#1E3A8A">STAJYER</text>
+      <ellipse cx="-66" cy="-64" rx="11" ry="17" fill="url(#skinC)"/><ellipse cx="66" cy="-64" rx="11" ry="17" fill="url(#skinC)"/>
+      <ellipse cx="0" cy="-66" rx="64" ry="76" fill="url(#skinC)"/>
+      <path d="M-68 -78 Q-76 -150 -8 -154 Q62 -162 70 -94 Q64 -112 52 -108 L58 -126 Q36 -116 30 -134 Q14 -114 0 -134 Q-12 -112 -30 -128 Q-34 -106 -52 -120 Q-52 -98 -68 -78 Z" fill="url(#hairC)"/>
+      <path d="M-34 -138 Q-6 -150 30 -140" stroke="#4B4B57" stroke-width="3" fill="none" opacity="0.8"/>
+      <path d="M-43 -92 Q-27 -101 -10 -93" stroke="#111827" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M10 -93 Q27 -101 43 -92" stroke="#111827" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-25" cy="-66" rx="13" ry="9.5" fill="#FFFFFF"/><ellipse cx="25" cy="-66" rx="13" ry="9.5" fill="#FFFFFF"/>
+      <circle cx="-25" cy="-65" r="6.5" fill="#2B1A10"/><circle cx="25" cy="-65" r="6.5" fill="#2B1A10"/>
+      <circle cx="-23" cy="-68" r="2" fill="#FFFFFF"/><circle cx="27" cy="-68" r="2" fill="#FFFFFF"/>
+      <path d="M-39 -71 Q-25 -80 -11 -71" stroke="#111827" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M11 -71 Q25 -80 39 -71" stroke="#111827" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M0 -58 Q-6 -40 5 -36" stroke="#A9714C" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path id="cMouth" d="M-20 -30 Q0 -14 20 -30" stroke="#8A3B2E" stroke-width="5" fill="none" stroke-linecap="round"/>
     </g>
     <!-- desk -->
     <rect x="80" y="1160" width="920" height="40" rx="8" fill="#334155"/>
     <rect x="100" y="1200" width="880" height="250" fill="#1E293B"/>
     <rect x="130" y="1240" width="300" height="160" rx="10" fill="#243349"/>
     <!-- tea -->
+    <ellipse cx="485" cy="1162" rx="46" ry="7" fill="#020617" opacity="0.35"/>
     <g id="tea"><path d="M450 1095 h70 v50 a20 20 0 0 1 -20 20 h-30 a20 20 0 0 1 -20 -20 z" fill="#F8FAFC"/>
       <path d="M520 1110 q22 0 22 18 q0 18 -22 18" stroke="#F8FAFC" stroke-width="8" fill="none"/>
       <path id="steam1" d="M470 1080 q-10 -20 0 -40 q10 -20 0 -40" stroke="#CBD5E1" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/>
@@ -75,13 +125,13 @@ svg{display:block}
     <g id="simit" opacity="0"><circle cx="400" cy="1140" r="34" fill="none" stroke="#C2410C" stroke-width="20"/><circle cx="400" cy="1140" r="34" fill="none" stroke="#FDBA74" stroke-width="6" stroke-dasharray="4 8"/></g>
     <!-- night tint -->
     <rect id="tint" x="0" y="0" width="1080" height="1920" fill="#020617" opacity="0.18"/>
-  </g>
   <!-- bubbles -->
   <g id="b1" opacity="0"><rect x="300" y="690" width="680" height="120" rx="40" fill="#FFFFFF"/><path d="M740 808 l40 46 l-6 -46 z" fill="#FFFFFF"/>
     <text x="640" y="766" text-anchor="middle" class="bub" font-size="44">Annem sarma yolladı abla!</text></g>
   <g id="b2" opacity="0"><rect x="140" y="650" width="840" height="170" rx="44" fill="#FFFFFF"/><path id="b2tail" d="M330 818 l-30 44 l60 -44 z" fill="#FFFFFF"/>
     <text id="b2a" x="560" y="720" text-anchor="middle" class="bub" font-size="42">Soğuk sarma,</text>
     <text id="b2b" x="560" y="776" text-anchor="middle" class="bub" font-size="42">sıcak muhabbet.</text></g>
+  </g>
   <!-- caption -->
   <g id="capg" opacity="0"><rect id="capbg" x="70" y="200" width="940" height="150" rx="28" fill="#000000" opacity="0.38"/>
     <text id="cap" x="540" y="296" text-anchor="middle" class="cap" font-size="58"></text></g>
@@ -132,7 +182,7 @@ function setT(t){
  $('title').setAttribute('opacity',1-seg(t,2.2,2.6));
  $('tsub').setAttribute('opacity',ease(seg(t,1.0,1.6)));
  let sc=1+0.06*ease(seg(t,19.6,21))-0.06*ease(seg(t,22.4,23.2));
- $('cam').setAttribute('transform',`translate(540 1100) scale(${sc}) translate(-540 -1100)`);
+ $('cam').setAttribute('transform',`translate(540 700) scale(${sc*1.18}) translate(-620 -700)`);
  const m=ease(seg(t,22.6,24));
  $('sky').setAttribute('fill',mix('#14224A','#FDBA74',m)); $('moon').setAttribute('opacity',1-m);
  $('sun').setAttribute('opacity',m); $('sun').setAttribute('cy',lerp(900,700,m));
@@ -153,7 +203,7 @@ function setT(t){
  $('defne').setAttribute('transform',`translate(${-(1-p)*420} 0)`); $('defne').setAttribute('opacity',p);
  // expressions
  const startled=(t>9.0&&t<9.4)||(t>15.4&&t<15.9); const look=t>19.8&&t<22.6;
- ['dEl','dEr'].forEach(e=>{$(e).setAttribute('ry',startled?14:8);$(e).setAttribute('rx',startled?11:7);$(e).setAttribute('cy',look?984:992)});
+ ['dEl','dEr'].forEach(e=>{$(e).setAttribute('ry',startled?9.5:7.5);$(e).setAttribute('rx',startled?8.5:6.5);$(e).setAttribute('cy',look?986:991)});['dWl','dWr'].forEach(e=>{$(e).setAttribute('ry',startled?15:10);$(e).setAttribute('rx',startled?16:14)});
  $('dMouth').setAttribute('d', startled?'M318 1036 Q330 1024 342 1036 Q330 1046 318 1036':(t>23?'M308 1026 Q330 1050 352 1026':'M312 1030 Q330 1040 348 1030'));
  $('cMouth').setAttribute('d', startled?'M-12 -24 Q0 -40 12 -24 Q0 -16 -12 -24':(look?'M-16 -28 L16 -28':'M-20 -30 Q0 -14 20 -30'));
  // bubbles
