@@ -6,7 +6,7 @@ https://claude.ai/artifact/NqAaBupVgsZD4CkNzSgzvi
 ## Haftalık ritim (onaylı)
 | İçerik | Gün | Saat (Europe/Istanbul) | Metricool |
 | --- | --- | --- | --- |
-| 1 gönderi (tek görsel ya da karusel) | Salı | 10:00 | POST, draft:false, autoPublish:true |
+| 2 gönderi (tek görsel ya da karusel; biri tercihen karusel) | Salı ve Cuma | 10:00 | POST, draft:false, autoPublish:true |
 | 1 Story (1–3 kare, çıkartmasız) | Perşembe | 19:00 | STORY, draft:false, autoPublish:true |
 | 1 Reels — "Gece 03:17" dizisi (çizim animasyon) | Cumartesi | 10:00 | REEL, draft:false, autoPublish:true |
 
