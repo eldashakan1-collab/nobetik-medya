@@ -6,11 +6,11 @@ https://claude.ai/artifact/NqAaBupVgsZD4CkNzSgzvi
 ## Haftalık ritim (onaylı)
 | İçerik | Gün | Saat (Europe/Istanbul) | Metricool |
 | --- | --- | --- | --- |
-| 1 gönderi (tek görsel ya da karusel) | Salı | 10:00 | POST, draft:true, autoPublish:true |
-| 1 Story (1–3 kare) | Perşembe | 19:00 | STORY, draft:true, autoPublish:false |
-| 1 Reels — "Gece 03:17" dizisi | Cumartesi | 10:00 | REEL, draft:true, autoPublish:false (yarı otomatik, aşağıya bak) |
+| 1 gönderi (tek görsel ya da karusel) | Salı | 10:00 | POST, draft:false, autoPublish:true |
+| 1 Story (1–3 kare, çıkartmasız) | Perşembe | 19:00 | STORY, draft:false, autoPublish:true |
+| 1 Reels — "Gece 03:17" dizisi (çizim animasyon) | Cumartesi | 10:00 | REEL, draft:false, autoPublish:true |
 
-Hiçbir şey kullanıcı onayı olmadan yayınlanmaz: her zaman `draft: true`.
+SIFIR ONAY (kullanıcı kararı, 24 Kasım): her şey otomatik yayınlanır. Kullanıcıya yalnızca paylaşım bildirimi gider ("Nöbetik yayın bildirimi" görevi). Bu yüzden kalite kontrolü ve yalnızca doğrulanmış bilgi kuralı her zamankinden sıkı uygulanır. Story'lerde çıkartma (anket, soru, link) kullanılmaz; çağrı metinle yapılır ("mesaj olarak gönder", "link profilde").
 
 ## Marka
 - Ad yalnızca **Nöbetik**. "NöbetiX" asla kullanılmaz.
@@ -41,9 +41,8 @@ Hiçbir şey kullanıcı onayı olmadan yayınlanmaz: her zaman `draft: true`.
 - Barındırma: bu depo herkese açık; Metricool'a `https://raw.githubusercontent.com/eldashakan1-collab/nobetik-medya/main/<yol>` verilir. Değişen dosyaya yeni ad ver (önbellek).
 - Reels: `tools/reel_build.py` (HTML + setT(t) → 30 fps kare → ffmpeg), ses `tools/sfx.py` (yalnızca sentez, telifsiz).
 
-## Reels üretim akışı (yarı otomatik — kullanıcı kararı, 24 Kasım)
-- Trend ses EKLENMEZ. Ses = Türkçe seslendirme (anlatıcı) + karakter konuşmaları + sentez efektler. Tüm konuşmalar altyazıda da yazılı.
-- Karakterler eski @nobetik videolarındaki gibi daha gerçekçi (yarı gerçekçi dijital illüstrasyon). Bu görseller bir yapay zekâ görsel aracında KULLANICI tarafından üretilir.
-- Sesler KULLANICI tarafından kaydedilir (telefonla) ya da bir yapay zekâ ses aracıyla üretilir. Bu ortamda doğal Türkçe TTS yok.
-- Haftalık görev her pazar: bir sonraki bölümün "üretim paketini" hazırlar — senaryo (saniye saniye), seslendirme ve diyalog metinleri (satır satır, kim söylüyor, kaç saniye), her sahne için görsel üretim prompt'ları (karakter tarifleri sabit), kapak fikri; `reels/paket-bolum-N.md` olarak depoya koyar ve kullanıcıya gönderir.
-- Kullanıcı görselleri (`reels/varliklar/bolum-N/sahne-*.png`) ve sesleri (`.../ses-*.m4a|mp3`) gönderince montaj yapılır: Ken Burns/parallax hareket, altyazı, ses miksajı, son kare, Metricool REEL taslağı.
+## Reels üretim akışı (tam otomatik — kullanıcı kararı, 24 Kasım)
+- Trend ses yok. Ses: `tools/sfx.py` ile sentez efektler (oda sesi, bip, zil, tik, akor, whoosh). Doğal Türkçe seslendirme bu ortamda üretilemediği için konuşmalar altyazı ve konuşma balonlarıyla verilir.
+- Görsel: düz vektör çizim animasyon, şablon `reels/gece-0317-bolum-1.html` (aynı karakterler, aynı mekân, aynı açılış/kapanış). Her bölüm yeni hikâye; sahneler, hareketler ve yeni küçük nesneler eklenebilir.
+- Üretim: HTML + setT(t) → `tools/reel_build.py <html> video <çıktı.mp4>` (30 fps, 30 sn, 1080×1920) → cue.json + `tools/sfx.py` → ffmpeg ile birleştir (volume=1.9, alimiter). Önizleme kareleriyle kontrol et.
+- Kullanıcı ileride gerçekçi görsel ve ses dosyası gönderirse o bölüm bunlarla yeniden kurgulanır.

@@ -12,6 +12,7 @@ Haftalık 30 saniyelik animasyon Reels. Amaç tanıtım değil: hemşirelerin ke
 
 ## Karakterler (görünüşleri sabit kalır)
 Görsel stil (yapay zekâ görsel aracı için): yarı gerçekçi dijital illüstrasyon, sinematik yumuşak ışık, 9:16 dikey, hastane hemşire istasyonu gece mavi tonlar + sıcak masa lambası, temiz ve pozitif; marka/logo/yazı içermesin.
+(Aşağıdaki gerçekçi tarifler yalnızca kullanıcı yapay zekâ görseli üretirse kullanılır. Otomatik bölümlerde karakterler `reels/gece-0317-bolum-1.html`'deki çizim haliyle aynen kalır: Defne lacivert forma #1E3A8A, koyu kahve topuz #3B2A20, ten #F2C6A0; Can açık mavi forma #60A5FA, kısa siyah saç #1F2937, ten #E8B48C, "ST" kartı.)
 - **Defne** — 30'lu yaşlarda deneyimli servis hemşiresi. Lacivert hemşire forması, koyu kahverengi saç topuz, sıcak kahve gözler, hafif yorgun ama gülümseyen yüz, boynunda steteskop. Sakin, esprili, ekibin ablası.
 - **Can** — 20'li yaşların başında stajyer erkek hemşire. Açık mavi forma, kısa siyah dağınık saç, buğday ten, göğsünde "Stajyer" kartı, heyecanlı ve biraz şaşkın ifade. Hevesli, her bölüm bir şey öğrenir.
 - Gerekirse yeni yan karakterler eklenebilir; tasarım `reels/gece-0317-bolum-1.html`'deki düz vektör stilinde.
@@ -19,7 +20,7 @@ Görsel stil (yapay zekâ görsel aracı için): yarı gerçekçi dijital illüs
 ## Yayınlanan bölümler
 | No | Tarih | Ad | Konu | Kapanış sorusu | Dosya |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 28 Kas 2026 (düz vektör deneme sürümü) | Sakin bir gece | Stajyer "Ne sakin bir gece" der, tüm ziller çalar | Senin servisinde yasaklı kelime ne? | reels/gece-0317-bolum-1-sesli.mp4 |
+| 1 | 28 Kas 2026 | Sakin bir gece | Stajyer "Ne sakin bir gece" der, tüm ziller çalar | Senin servisinde yasaklı kelime ne? | reels/gece-0317-bolum-1-sesli.mp4 |
 
 ## Fikir havuzu (kullanıldıkça listeden düş)
 - Nöbet devri: "Bir şey yok" denen servis
