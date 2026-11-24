@@ -20,8 +20,8 @@ with sync_playwright() as p:
         tall=src in ('Reel','S1','S2','S3')
         pg=b.new_page(viewport={'width':1080,'height':1920 if tall else 1350})
         html=open(f'{SRC}/{src}.dc.html',encoding='utf-8').read()
-        extra='<style>'+FONTCSS+('[style*="dashed"]{visibility:hidden}' if src.startswith('S') else '')+'</style>'
-        html=html.replace('<head>','<head>'+extra,1)
+        extra='<style>'+FONTCSS+''+'</style>'
+        html=html.replace('<head>','<head>'+extra,1).replace('/_blob/fabb04487730765b78d33f48ebfd84f1','file:///home/claude/brand/logo.png')
         tmp=f'/tmp/r_{src}.html'; open(tmp,'w',encoding='utf-8').write(html)
         pg.goto('file://'+tmp); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(600)
         ok=pg.evaluate("[document.fonts.check('600 40px Fraunces'),document.fonts.check('700 40px Caveat'),document.fonts.check('900 40px Inter')]")
