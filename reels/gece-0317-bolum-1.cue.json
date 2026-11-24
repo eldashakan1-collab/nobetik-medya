@@ -1,0 +1,282 @@
+{
+"duration": 30,
+"ambient": [
+[
+2.4,
+11.5
+],
+[
+13.6,
+28.4
+]
+],
+"events": [
+{
+"t": 0.0,
+"type": "tick"
+},
+{
+"t": 0.5,
+"type": "tick"
+},
+{
+"t": 1.0,
+"type": "tick"
+},
+{
+"t": 1.5,
+"type": "tick"
+},
+{
+"t": 2.0,
+"type": "tick"
+},
+{
+"t": 2.3,
+"type": "whoosh"
+},
+{
+"t": 2.8,
+"type": "beep"
+},
+{
+"t": 4.05,
+"type": "beep"
+},
+{
+"t": 5.3,
+"type": "beep"
+},
+{
+"t": 6.55,
+"type": "beep"
+},
+{
+"t": 7.8,
+"type": "beep"
+},
+{
+"t": 9.05,
+"type": "beep"
+},
+{
+"t": 10.3,
+"type": "beep"
+},
+{
+"t": 9.2,
+"type": "pop"
+},
+{
+"t": 11.6,
+"type": "freeze"
+},
+{
+"t": 13.6,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 13.93,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 14.26,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 14.59,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 14.92,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 15.25,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 15.58,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 15.91,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 16.24,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 16.57,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 16.9,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 17.23,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 17.56,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 17.89,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 18.22,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 18.55,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 18.88,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 19.21,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 19.54,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 19.87,
+"type": "beep_fast",
+"gain": 0.8
+},
+{
+"t": 13.6,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 14.02,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 14.44,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 14.86,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 15.28,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 15.7,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 16.12,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 16.54,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 16.96,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 17.38,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 17.8,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 18.22,
+"type": "bell",
+"gain": 0.85
+},
+{
+"t": 20.0,
+"type": "chime"
+},
+{
+"t": 20.5,
+"type": "beep",
+"gain": 0.7
+},
+{
+"t": 21.75,
+"type": "beep",
+"gain": 0.7
+},
+{
+"t": 23.0,
+"type": "beep",
+"gain": 0.7
+},
+{
+"t": 24.25,
+"type": "beep",
+"gain": 0.7
+},
+{
+"t": 25.5,
+"type": "beep",
+"gain": 0.7
+},
+{
+"t": 26.75,
+"type": "beep",
+"gain": 0.7
+},
+{
+"t": 28.0,
+"type": "beep",
+"gain": 0.7
+},
+{
+"t": 25.7,
+"type": "pop"
+},
+{
+"t": 28.4,
+"type": "whoosh"
+}
+]
+}
