@@ -35,7 +35,7 @@ KURAL: Bu tabloda tarihi o haftanın cumartesisine denk gelen bir bölüm varsa 
 | No | Tarih | Seri · Ad | Konu | Kapanış sorusu | Dosya |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 28 Kas 2026 | Sakin bir gece | Stajyer "Ne sakin bir gece" der, tüm ziller çalar | Senin servisinde yasaklı kelime ne? | reels/gece-0317-bolum-1-v2.mp4 |
-| 2 | 5 Ara 2026 (kullanıcıya önceden gönderildi; Metricool'a KONMADI, kullanıcı kendisi paylaşacak) | Gece yemeği | 03:17'de yemek molası; her ilk lokmada bir zil; 06:52'de soğuk sarma, sıcak muhabbet | Senin serviste gece yemeği saat kaçta? | reels/gece-0317-bolum-2-v2.mp4 |
+| 2 | 5 Ara 2026 (kullanıcıya önceden gönderildi; Metricool'a KONMADI, kullanıcı kendisi paylaşacak; iki sürüm: çizim "Gece yemeği" ve görselli "Aynı gece, iki masa" — reels/gece-0317-bolum-2-iki-masa.mp4) | Gece yemeği | 03:17'de yemek molası; her ilk lokmada bir zil; 06:52'de soğuk sarma, sıcak muhabbet | Senin serviste gece yemeği saat kaçta? | reels/gece-0317-bolum-2-v2.mp4 |
 
 ## Fikir havuzu (kullanıldıkça listeden düş)
 - Nöbet devri: "Bir şey yok" denen servis
@@ -46,3 +46,10 @@ KURAL: Bu tabloda tarihi o haftanın cumartesisine denk gelen bir bölüm varsa 
 - Yılbaşı gecesi 00:00 — serviste bir dilim pasta, bir dakikalık kutlama (31 Aralık haftası)
 - Stajyer ilk kez damar yolunu tek seferde açar — tüm istasyon alkışlar
 - Hasta yakınından gelen küçük bir teşekkür notu
+
+## Kullanıcının verdiği gerçekçi karakter görselleri (24 Kasım)
+- reels/karakterler/defne-istasyon-gece.png — DEFNE (yeni görünüş): dalgalı kızıl saç, yeşil gözler, çiller, kraliyet mavisi forma, steteskop; gece hemşire istasyonu, laptop, dosyalar. İngilizce yazılar Türkçeye çevrildi (orijinal: _orijinal-...).
+- reels/karakterler/selin-ofis-gece.jpg — SELİN, sorumlu hemşire: kahverengi omuz hizası saç, gri ceket, beyaz gömlek; gece ofiste kâğıt yığınının başında.
+- Görselli bölümler "hareketli çizgi roman" tekniğiyle yapılır: görsel 2x büyütülür, kamera yavaş kayar/yaklaşır, sahneler arası geçiş, altyazı kutusu, görsel üstüne eklenen nesneler (ör. not kâğıdı), efekt sesleri. Şablon: reels/gece-0317-bolum-2-iki-masa.html.
+- Görsellerdeki yabancı dilde yazılar cv2.inpaint ile silinip Türkçe yazılır.
+- Aynı görseller art arda bölümlerde tekrar kullanılmaz; yeni görsel yoksa çizim stiline (tools/characters.py) dönülür.

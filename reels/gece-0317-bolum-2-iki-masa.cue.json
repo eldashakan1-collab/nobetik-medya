@@ -1,0 +1,153 @@
+{
+"duration": 30,
+"ambient": [
+[
+2.4,
+28.4
+]
+],
+"events": [
+{
+"t": 0.0,
+"type": "tick"
+},
+{
+"t": 0.5,
+"type": "tick"
+},
+{
+"t": 1.0,
+"type": "tick"
+},
+{
+"t": 1.5,
+"type": "tick"
+},
+{
+"t": 2.0,
+"type": "tick"
+},
+{
+"t": 2.3,
+"type": "whoosh"
+},
+{
+"t": 3.0,
+"type": "beep",
+"gain": 0.5
+},
+{
+"t": 4.25,
+"type": "beep",
+"gain": 0.5
+},
+{
+"t": 5.5,
+"type": "beep",
+"gain": 0.5
+},
+{
+"t": 6.75,
+"type": "beep",
+"gain": 0.5
+},
+{
+"t": 8.0,
+"type": "beep",
+"gain": 0.5
+},
+{
+"t": 9.0,
+"type": "whoosh",
+"gain": 0.5
+},
+{
+"t": 9.5,
+"type": "tick",
+"gain": 0.55
+},
+{
+"t": 10.5,
+"type": "tick",
+"gain": 0.55
+},
+{
+"t": 11.5,
+"type": "tick",
+"gain": 0.55
+},
+{
+"t": 12.5,
+"type": "tick",
+"gain": 0.55
+},
+{
+"t": 13.5,
+"type": "tick",
+"gain": 0.55
+},
+{
+"t": 14.5,
+"type": "tick",
+"gain": 0.55
+},
+{
+"t": 15.0,
+"type": "whoosh",
+"gain": 0.5
+},
+{
+"t": 15.5,
+"type": "beep",
+"gain": 0.5
+},
+{
+"t": 16.75,
+"type": "beep",
+"gain": 0.5
+},
+{
+"t": 18.0,
+"type": "beep",
+"gain": 0.5
+},
+{
+"t": 19.5,
+"type": "whoosh",
+"gain": 0.5
+},
+{
+"t": 20.2,
+"type": "pop",
+"gain": 1.1
+},
+{
+"t": 21.0,
+"type": "tick",
+"gain": 0.5
+},
+{
+"t": 22.0,
+"type": "tick",
+"gain": 0.5
+},
+{
+"t": 23.0,
+"type": "tick",
+"gain": 0.5
+},
+{
+"t": 24.0,
+"type": "tick",
+"gain": 0.5
+},
+{
+"t": 25.0,
+"type": "chime"
+},
+{
+"t": 28.4,
+"type": "whoosh"
+}
+]
+}
