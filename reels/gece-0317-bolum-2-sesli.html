@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8">
+<style>
+FONTCSS
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0B1430}
+svg{display:block}
+.cap{font-family:Inter,sans-serif;font-weight:800;fill:#FFFFFF}
+.bub{font-family:Inter,sans-serif;font-weight:700;fill:#111827}
+</style></head>
+<body>
+<svg id="s" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B2A4E"/><stop offset="1" stop-color="#0F1B38"/></linearGradient>
+  
+    <radialGradient id="skinD" cx="0.45" cy="0.4" r="0.7"><stop offset="0" stop-color="#F8D6B4"/><stop offset="0.75" stop-color="#EDBE96"/><stop offset="1" stop-color="#D9A07A"/></radialGradient>
+    <radialGradient id="skinC" cx="0.45" cy="0.4" r="0.7"><stop offset="0" stop-color="#EBC29B"/><stop offset="0.75" stop-color="#D6A57C"/><stop offset="1" stop-color="#BF8962"/></radialGradient>
+    <linearGradient id="hairD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#57402F"/><stop offset="1" stop-color="#2A1B12"/></linearGradient>
+    <linearGradient id="hairC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34343D"/><stop offset="1" stop-color="#0E0E12"/></linearGradient>
+    <linearGradient id="dScrub" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2D4FA8"/><stop offset="1" stop-color="#16245A"/></linearGradient>
+    <linearGradient id="cScrub" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8CC0FC"/><stop offset="1" stop-color="#4A87E0"/></linearGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FCD34D" stop-opacity="0.22"/><stop offset="1" stop-color="#FCD34D" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="#0B1430"/>
+  <g id="cam">
+    <!-- room -->
+    <rect x="0" y="0" width="1080" height="1920" fill="url(#room)"/>
+    <rect x="0" y="1450" width="1080" height="470" fill="#0A1228"/>
+    <circle cx="470" cy="1090" r="460" fill="url(#lamp)"/>
+    <!-- window -->
+    <rect x="110" y="420" width="360" height="380" rx="14" fill="#0E1A3A" stroke="#33466F" stroke-width="10"/>
+    <rect id="sky" x="115" y="425" width="350" height="370" rx="10" fill="#14224A"/>
+    <circle id="sun" cx="290" cy="900" r="58" fill="#FBBF24" opacity="0"/>
+    <g id="moon"><path d="M380 520 A52 52 0 1 0 380 624 A42 42 0 1 1 380 520 Z" fill="#E0E7FF"/>
+      <circle cx="190" cy="500" r="3" fill="#C7D2FE"/><circle cx="240" cy="560" r="2.5" fill="#C7D2FE"/><circle cx="170" cy="650" r="2" fill="#C7D2FE"/></g>
+    <rect x="285" y="420" width="10" height="380" fill="#33466F"/>
+    <rect x="110" y="602" width="360" height="10" fill="#33466F"/>
+    <!-- call bell panel -->
+    <rect x="590" y="420" width="380" height="310" rx="18" fill="#16213F" stroke="#2C3B63" stroke-width="4"/>
+    <text x="780" y="462" text-anchor="middle" font-family="Inter" font-weight="700" font-size="22" fill="#7C8BB5" letter-spacing="3">HASTA ÇAĞRI</text>
+    <g id="bells"></g>
+    <!-- Defne (sitting) -->
+    <g id="defne">
+      <rect x="212" y="1035" width="236" height="210" rx="44" fill="#0B1226" opacity="0.6"/>
+      <path d="M232 1250 Q230 1088 300 1068 L360 1068 Q430 1088 428 1250 Z" fill="url(#dScrub)"/>
+      <path d="M262 1110 Q258 1180 268 1250" stroke="#132158" stroke-width="4" fill="none" opacity="0.7"/>
+      <path d="M398 1110 Q402 1180 392 1250" stroke="#132158" stroke-width="4" fill="none" opacity="0.7"/>
+      <path d="M307 1038 L353 1038 L357 1082 Q330 1096 303 1082 Z" fill="url(#skinD)"/>
+      <path d="M303 1060 Q330 1076 357 1060 L357 1072 Q330 1090 303 1072 Z" fill="#B97C58" opacity="0.45"/>
+      <path d="M298 1070 L330 1118 L362 1070 Z" fill="url(#skinD)"/>
+      <path d="M294 1068 L330 1124 L366 1068" fill="none" stroke="#101C47" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M291 1074 Q276 1150 309 1180 M369 1074 Q384 1150 351 1180" stroke="#475569" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M309 1180 Q330 1198 351 1180" stroke="#475569" stroke-width="6" fill="none"/>
+      <circle cx="330" cy="1198" r="12" fill="#CBD5E1" stroke="#64748B" stroke-width="3"/>
+      <rect x="372" y="1152" width="36" height="42" rx="5" fill="none" stroke="#101C47" stroke-width="3"/>
+      <rect x="381" y="1134" width="6" height="30" rx="2" fill="#E5E7EB"/><rect x="391" y="1138" width="5" height="26" rx="2" fill="#F59E0B"/>
+      <rect x="252" y="1140" width="42" height="54" rx="6" fill="#F8FAFC"/><rect x="258" y="1149" width="30" height="11" rx="2" fill="#1D4ED8"/><rect x="258" y="1166" width="22" height="5" rx="2" fill="#94A3B8"/><rect x="258" y="1176" width="26" height="5" rx="2" fill="#94A3B8"/>
+      <circle cx="330" cy="893" r="37" fill="url(#hairD)"/>
+      <path d="M306 880 Q330 862 354 880" stroke="#7A5A42" stroke-width="3" fill="none" opacity="0.8"/>
+      <ellipse cx="264" cy="996" rx="11" ry="17" fill="url(#skinD)"/><ellipse cx="396" cy="996" rx="11" ry="17" fill="url(#skinD)"/>
+      <circle cx="264" cy="1012" r="3" fill="#F1F5F9"/><circle cx="396" cy="1012" r="3" fill="#F1F5F9"/>
+      <ellipse cx="330" cy="992" rx="66" ry="78" fill="url(#skinD)"/>
+      <rect x="311" y="921" width="38" height="10" rx="5" fill="#1D4ED8"/>
+      <path d="M262 996 Q256 912 330 906 Q404 912 398 996 Q393 954 362 942 Q342 962 300 950 Q272 960 262 996 Z" fill="url(#hairD)"/>
+      <path d="M298 926 Q330 914 374 930" stroke="#7A5A42" stroke-width="3" fill="none" opacity="0.8"/>
+      <path d="M268 986 Q262 1030 278 1052" stroke="#3B2A20" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M291 962 Q305 954 320 961" stroke="#3B2A20" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M340 961 Q355 954 369 962" stroke="#3B2A20" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse id="dWl" cx="305" cy="990" rx="14" ry="10" fill="#FFFFFF"/><ellipse id="dWr" cx="355" cy="990" rx="14" ry="10" fill="#FFFFFF"/>
+      <g id="dEyes"><ellipse id="dEl" cx="305" cy="991" rx="6.5" ry="7.5" fill="#4A2C17"/><ellipse id="dEr" cx="355" cy="991" rx="6.5" ry="7.5" fill="#4A2C17"/></g>
+      <circle cx="307.5" cy="988" r="2.2" fill="#FFFFFF"/><circle cx="357.5" cy="988" r="2.2" fill="#FFFFFF"/>
+      <path d="M290 985 Q305 975 320 984" stroke="#1F2937" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M340 984 Q355 975 370 985" stroke="#1F2937" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M330 998 Q325 1016 335 1020" stroke="#C08460" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="286" cy="1020" rx="13" ry="8" fill="#F28B82" opacity="0.28"/><ellipse cx="374" cy="1020" rx="13" ry="8" fill="#F28B82" opacity="0.28"/>
+      <path id="dMouth" d="M312 1034 Q330 1044 348 1034" stroke="#B4535A" stroke-width="5" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- Can (stajyer, standing) -->
+    
+    <g id="can">
+      <path d="M-100 300 Q-102 42 -40 14 L40 14 Q102 42 100 300 Z" fill="url(#cScrub)"/>
+      <path d="M-66 80 Q-72 180 -62 300 M66 80 Q72 180 62 300" stroke="#3F7AD1" stroke-width="4" fill="none" opacity="0.7"/>
+      <path d="M-25 -16 L25 -16 L27 24 Q0 40 -27 24 Z" fill="url(#skinC)"/>
+      <path d="M-27 4 Q0 20 27 4 L27 16 Q0 34 -27 16 Z" fill="#A9714C" opacity="0.45"/>
+      <path d="M-34 16 L0 66 L34 16 Z" fill="url(#skinC)"/>
+      <path d="M-37 14 L0 72 L37 14" stroke="#3B82F6" stroke-width="5" fill="none" stroke-linejoin="round"/>
+      <path d="M-30 20 L-12 140 M30 20 L12 140" stroke="#1D4ED8" stroke-width="5" stroke-linecap="round"/>
+      <rect x="-32" y="138" width="64" height="74" rx="8" fill="#F8FAFC"/><rect x="-24" y="148" width="48" height="14" rx="3" fill="#1D4ED8"/>
+      <text x="0" y="192" text-anchor="middle" font-family="Inter" font-weight="800" font-size="14" fill="#1E3A8A">STAJYER</text>
+      <ellipse cx="-66" cy="-64" rx="11" ry="17" fill="url(#skinC)"/><ellipse cx="66" cy="-64" rx="11" ry="17" fill="url(#skinC)"/>
+      <ellipse cx="0" cy="-66" rx="64" ry="76" fill="url(#skinC)"/>
+      <path d="M-68 -78 Q-76 -150 -8 -154 Q62 -162 70 -94 Q64 -112 52 -108 L58 -126 Q36 -116 30 -134 Q14 -114 0 -134 Q-12 -112 -30 -128 Q-34 -106 -52 -120 Q-52 -98 -68 -78 Z" fill="url(#hairC)"/>
+      <path d="M-34 -138 Q-6 -150 30 -140" stroke="#4B4B57" stroke-width="3" fill="none" opacity="0.8"/>
+      <path d="M-43 -92 Q-27 -101 -10 -93" stroke="#111827" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M10 -93 Q27 -101 43 -92" stroke="#111827" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-25" cy="-66" rx="13" ry="9.5" fill="#FFFFFF"/><ellipse cx="25" cy="-66" rx="13" ry="9.5" fill="#FFFFFF"/>
+      <circle cx="-25" cy="-65" r="6.5" fill="#2B1A10"/><circle cx="25" cy="-65" r="6.5" fill="#2B1A10"/>
+      <circle cx="-23" cy="-68" r="2" fill="#FFFFFF"/><circle cx="27" cy="-68" r="2" fill="#FFFFFF"/>
+      <path d="M-39 -71 Q-25 -80 -11 -71" stroke="#111827" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M11 -71 Q25 -80 39 -71" stroke="#111827" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M0 -58 Q-6 -40 5 -36" stroke="#A9714C" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path id="cMouth" d="M-20 -30 Q0 -14 20 -30" stroke="#8A3B2E" stroke-width="5" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- desk -->
+    <rect x="80" y="1160" width="920" height="40" rx="8" fill="#334155"/>
+    <rect x="100" y="1200" width="880" height="250" fill="#1E293B"/>
+    <rect x="130" y="1240" width="300" height="160" rx="10" fill="#243349"/>
+    <!-- tea -->
+    <ellipse cx="485" cy="1162" rx="46" ry="7" fill="#020617" opacity="0.35"/>
+    <g id="tea"><path d="M450 1095 h70 v50 a20 20 0 0 1 -20 20 h-30 a20 20 0 0 1 -20 -20 z" fill="#F8FAFC"/>
+      <path d="M520 1110 q22 0 22 18 q0 18 -22 18" stroke="#F8FAFC" stroke-width="8" fill="none"/>
+      <path id="steam1" d="M470 1080 q-10 -20 0 -40 q10 -20 0 -40" stroke="#CBD5E1" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <path id="steam2" d="M500 1080 q-10 -20 0 -40 q10 -20 0 -40" stroke="#CBD5E1" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/></g>
+    <!-- food -->
+    <g id="food" transform="translate(-25 0)"><ellipse cx="640" cy="1150" rx="70" ry="16" fill="#E2E8F0"/>
+      <rect x="585" y="1112" width="110" height="40" rx="14" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="3"/>
+      <g fill="#4D7C0F"><rect x="598" y="1118" width="22" height="13" rx="6"/><rect x="624" y="1118" width="22" height="13" rx="6"/><rect x="650" y="1118" width="22" height="13" rx="6"/><rect x="610" y="1132" width="22" height="13" rx="6"/><rect x="636" y="1132" width="22" height="13" rx="6"/><rect x="662" y="1132" width="22" height="13" rx="6"/></g>
+      <path id="fsteam1" d="M610 1100 q-8 -18 0 -36 q8 -18 0 -36" stroke="#CBD5E1" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path id="fsteam2" d="M660 1100 q-8 -18 0 -36 q8 -18 0 -36" stroke="#CBD5E1" stroke-width="5" fill="none" stroke-linecap="round"/></g>
+    <!-- monitor -->
+    <rect x="880" y="930" width="160" height="130" rx="14" fill="#0B1220" stroke="#475569" stroke-width="8"/>
+    <rect x="945" y="1060" width="30" height="100" fill="#475569"/>
+    <path id="ecg" d="" stroke="#34D399" stroke-width="5" fill="none" stroke-linejoin="round"/>
+    <text id="bpm" x="1028" y="958" text-anchor="end" font-family="Inter" font-weight="800" font-size="26" fill="#34D399">72</text>
+    <!-- simit (morning) -->
+    <g id="simit" opacity="0"><circle cx="400" cy="1140" r="34" fill="none" stroke="#C2410C" stroke-width="20"/><circle cx="400" cy="1140" r="34" fill="none" stroke="#FDBA74" stroke-width="6" stroke-dasharray="4 8"/></g>
+    <!-- night tint -->
+    <rect id="tint" x="0" y="0" width="1080" height="1920" fill="#020617" opacity="0.18"/>
+  <!-- bubbles -->
+  <g id="b1" opacity="0"><rect x="300" y="690" width="680" height="120" rx="40" fill="#FFFFFF"/><path d="M740 808 l40 46 l-6 -46 z" fill="#FFFFFF"/>
+    <text x="640" y="766" text-anchor="middle" class="bub" font-size="44">Annem sarma yolladı abla!</text></g>
+  <g id="b2" opacity="0"><rect x="140" y="650" width="840" height="170" rx="44" fill="#FFFFFF"/><path id="b2tail" d="M330 818 l-30 44 l60 -44 z" fill="#FFFFFF"/>
+    <text id="b2a" x="560" y="720" text-anchor="middle" class="bub" font-size="42">Soğuk sarma,</text>
+    <text id="b2b" x="560" y="776" text-anchor="middle" class="bub" font-size="42">sıcak muhabbet.</text></g>
+  </g>
+  <!-- caption -->
+  <g id="capg" opacity="0"><rect id="capbg" x="70" y="200" width="940" height="150" rx="28" fill="#000000" opacity="0.38"/>
+    <text id="cap" x="540" y="296" text-anchor="middle" class="cap" font-size="58"></text></g>
+  <!-- big center text -->
+  <text id="big" x="540" y="1600" text-anchor="middle" class="cap" font-size="88" opacity="0"></text>
+  <!-- clock in corner -->
+  <g id="mini" opacity="0"><rect x="770" y="1520" width="250" height="96" rx="22" fill="#000000" opacity="0.45"/>
+    <text id="miniT" x="895" y="1588" text-anchor="middle" font-family="Inter" font-weight="900" font-size="58" fill="#FBBF24">03:18</text></g>
+  <!-- title card -->
+  <g id="title">
+    <rect width="1080" height="1920" fill="#0B1430"/>
+    <text x="540" y="760" text-anchor="middle" font-family="Inter" font-weight="700" font-size="34" fill="#93C5FD" letter-spacing="8">GECE NÖBETİ · BÖLÜM 2</text>
+    <text id="tclock" x="540" y="1010" text-anchor="middle" font-family="Inter" font-weight="900" font-size="250" fill="#FBBF24" letter-spacing="-6">03:17</text>
+    <text id="tsub" x="540" y="1130" text-anchor="middle" font-family="Fraunces" font-style="italic" font-size="76" fill="#E0E7FF" opacity="0">Gece yemeği.</text>
+  </g>
+  <!-- end card -->
+  <g id="end" opacity="0">
+    <rect width="1080" height="1920" fill="#0B1430"/>
+    <text x="540" y="780" text-anchor="middle" font-family="Inter" font-weight="700" font-size="34" fill="#93C5FD" letter-spacing="8">GECE 03:17</text>
+    <text x="540" y="930" text-anchor="middle" font-family="Inter" font-weight="900" font-size="92" fill="#FFFFFF">Senin serviste</text>
+    <text x="540" y="1040" text-anchor="middle" font-family="Inter" font-weight="900" font-size="80" fill="#FBBF24">gece yemeği saat kaçta?</text>
+    <text x="540" y="1160" text-anchor="middle" font-family="Inter" font-weight="500" font-size="40" fill="#CBD5E1">Yorumlara yaz, mola arkadaşını etiketle.</text>
+    <image href="LOGO" x="465" y="1290" width="150" height="39" opacity="0.75"/>
+  </g>
+</svg>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+const seg=(t,a,b)=>cl((t-a)/(b-a));
+const lerp=(a,b,x)=>a+(b-a)*x;
+function hex(c){return [1,3,5].map(i=>parseInt(c.substr(i,2),16))}
+function mix(a,b,x){const A=hex(a),B=hex(b);return 'rgb('+A.map((v,i)=>Math.round(lerp(v,B[i],x))).join(',')+')'}
+// bells
+const bells=$('bells');let bh='';
+for(let r=0;r<3;r++)for(let c=0;c<4;c++){const i=r*4+c,x=640+c*90,y=505+r*75;
+ bh+=`<circle id="bl${i}" cx="${x}" cy="${y}" r="24" fill="#26365E"/><text x="${x}" y="${y+9}" text-anchor="middle" font-family="Inter" font-weight="800" font-size="24" fill="#94A3B8">${i+1}</text>`}
+bells.innerHTML=bh;
+const caps=[[2.7,6.2,'03:17. Nihayet yemek molası.'],[6.2,9.0,'İlk lokma…'],[9.0,10.6,'…5 numara.'],[10.6,13.0,'Yemek bekleyebilir.'],[13.0,15.4,'03:41. Tekrar deneyelim.'],[15.4,16.6,'9 numara.'],[16.6,19.2,'Sarma soğudu. Çay soğudu.'],[19.6,22.6,'05:10. Kimse kıpırdamıyor…'],[22.8,25.4,'06:52. Gece yemeği servis edildi.']];
+function ecg(t,busy){let d='';const x0=892,w=136,y0=1010;
+ for(let i=0;i<=60;i++){const x=x0+w*i/60;const ph=((i/60)*1.3+t*0.8)%1;
+  let y=y0; if(ph>.45&&ph<.5)y-=36; else if(ph>=.5&&ph<.55)y+=16; else if(ph>.3&&ph<.38)y-=7;
+  d+=(i?'L':'M')+x.toFixed(1)+' '+y.toFixed(1)}
+ return d}
+// presence: 1 = at station, 0 = away. Leaves at 9.3 and 16.0, returns 13.0 and 19.2
+function pres(t){ if(t<9.3)return 1; if(t<9.9)return 1-ease(seg(t,9.3,9.9)); if(t<12.8)return 0; if(t<13.4)return ease(seg(t,12.8,13.4)); if(t<16.0)return 1; if(t<16.6)return 1-ease(seg(t,16.0,16.6)); if(t<19.0)return 0; return ease(seg(t,19.0,19.6)) }
+function setT(t){
+ $('title').setAttribute('opacity',1-seg(t,2.2,2.6));
+ $('tsub').setAttribute('opacity',ease(seg(t,1.0,1.6)));
+ let sc=1+0.06*ease(seg(t,19.6,21))-0.06*ease(seg(t,22.4,23.2));
+ $('cam').setAttribute('transform',`translate(540 700) scale(${sc*1.18}) translate(-620 -700)`);
+ const m=ease(seg(t,22.6,24));
+ $('sky').setAttribute('fill',mix('#14224A','#FDBA74',m)); $('moon').setAttribute('opacity',1-m);
+ $('sun').setAttribute('opacity',m); $('sun').setAttribute('cy',lerp(900,700,m));
+ $('tint').setAttribute('opacity',lerp(0.18,0,m)); $('simit').setAttribute('opacity',0);
+ // steam: tea & food hot until 16.6, then cold
+ const hot=t<16.6; const hf=hot?1:1-seg(t,16.6,17.6);
+ ['steam1','steam2','fsteam1','fsteam2'].forEach((s,k)=>{$(s).setAttribute('opacity',(0.35+0.3*Math.sin(t*3+k))*hf);$(s).setAttribute('transform',`translate(0 ${-((t*20+k*15)%20)})`)});
+ $('ecg').setAttribute('d',ecg(t,false)); $('bpm').textContent='72';
+ // bells: 5 (idx4) 9.0-10.6 ; 9 (idx8) 15.4-16.6
+ for(let i=0;i<12;i++){let on=(i===4&&t>9.0&&t<10.6)||(i===8&&t>15.4&&t<16.6);const blink=on&&Math.floor(t*6)%2===0;
+  $('bl'+i).setAttribute('fill',on?(blink?'#EF4444':'#B91C1C'):'#26365E')}
+ // characters
+ const p=pres(t);
+ const canIn=ease(seg(t,3.6,4.6)); const sit=ease(seg(t,6.0,6.8))*(t<9.3?1:0)+ (t>=13.0&&t<16.0?1:0)+ (t>=19.2?ease(seg(t,19.2,19.8)):0);
+ const cx=lerp(1260,780,canIn)-(1-p)*520*(t>4.6?1:0);
+ $('can').setAttribute('transform',`translate(${cx} ${985+Math.min(1,sit)*95})`);
+ $('can').setAttribute('opacity',t>4.6?p:1);
+ $('defne').setAttribute('transform',`translate(${-(1-p)*420} 0)`); $('defne').setAttribute('opacity',p);
+ // expressions
+ const startled=(t>9.0&&t<9.4)||(t>15.4&&t<15.9); const look=t>19.8&&t<22.6;
+ ['dEl','dEr'].forEach(e=>{$(e).setAttribute('ry',startled?9.5:7.5);$(e).setAttribute('rx',startled?8.5:6.5);$(e).setAttribute('cy',look?986:991)});['dWl','dWr'].forEach(e=>{$(e).setAttribute('ry',startled?15:10);$(e).setAttribute('rx',startled?16:14)});
+ $('dMouth').setAttribute('d', startled?'M318 1036 Q330 1024 342 1036 Q330 1046 318 1036':(t>23?'M308 1026 Q330 1050 352 1026':'M312 1030 Q330 1040 348 1030'));
+ $('cMouth').setAttribute('d', startled?'M-12 -24 Q0 -40 12 -24 Q0 -16 -12 -24':(look?'M-16 -28 L16 -28':'M-20 -30 Q0 -14 20 -30'));
+ // bubbles
+ $('b1').setAttribute('opacity',ease(seg(t,4.7,5.0))*(1-seg(t,6.3,6.5)));
+ $('b2').setAttribute('opacity',ease(seg(t,25.4,25.7))*(1-seg(t,30.3,30.5)));
+ const second=t>=27.75; $('b2a').textContent=second?'Bu kahvaltı mı oldu':'Soğuk sarma,'; $('b2b').textContent=second?'şimdi abla?':'sıcak muhabbet.';
+ $('b2tail').setAttribute('d', second?'M740 818 l40 40 l-6 -40 z':'M330 818 l-30 44 l60 -44 z');
+ // captions
+ let c=caps.find(k=>t>=k[0]&&t<k[1]);
+ if(c){$('cap').textContent=c[2];const a=Math.min(seg(t,c[0],c[0]+.25),1-seg(t,c[1]-.2,c[1]));$('capg').setAttribute('opacity',a);
+  const w=Math.min(960,c[2].length*31+120);$('capbg').setAttribute('x',540-w/2);$('capbg').setAttribute('width',w)} else $('capg').setAttribute('opacity',0);
+ // big center text: ding
+ let big='',ba=0; if(t>=9.0&&t<10.0){big='DING!';ba=1-seg(t,9.6,10.0)} else if(t>=15.4&&t<16.4){big='DING!';ba=1-seg(t,16.0,16.4)}
+ $('big').textContent=big;$('big').setAttribute('opacity',ba);
+ // mini clock
+ const fmt=v=>'0'+Math.floor(v/60)+':'+String(v%60).padStart(2,'0');
+ const segs=[[2.6,9.3,197,197],[9.3,13.0,197,221],[13.0,16.6,221,221],[16.6,19.4,221,310],[19.4,22.6,310,310],[22.6,23.6,310,412],[23.6,30.4,412,412]];
+ let mt=null; for(const k of segs){if(t>=k[0]&&t<k[1]){mt=fmt(Math.round(lerp(k[2],k[3],ease(seg(t,k[0],k[1])))));break}}
+ $('mini').setAttribute('opacity',mt?1:0); if(mt)$('miniT').textContent=mt;
+ $('end').setAttribute('opacity',ease(seg(t,30.4,30.8)));
+}
+window.setT=setT; setT(0);
+</script>
+</body></html>
