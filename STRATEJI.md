@@ -8,7 +8,7 @@ https://claude.ai/artifact/NqAaBupVgsZD4CkNzSgzvi
 | --- | --- | --- | --- |
 | 2 gönderi (tek görsel ya da karusel; biri tercihen karusel) | Salı ve Cuma | 10:00 | POST, draft:false, autoPublish:true |
 | 1 Story (1–3 kare, çıkartmasız) | Perşembe | 19:00 | STORY, draft:false, autoPublish:true |
-| 1 Reels — "Gece 03:17" dizisi (çizim animasyon) | Cumartesi | 10:00 | REEL, draft:false, autoPublish:true |
+| 1 Reels — 19 Aralık'a kadar "Gece 03:17", sonra dönüşümlü seriler (reels/BOLUMLER.md) | Cumartesi | 10:00 | REEL, draft:false, autoPublish:true |
 
 SIFIR ONAY (kullanıcı kararı, 24 Kasım): her şey otomatik yayınlanır. Kullanıcıya yalnızca paylaşım bildirimi gider ("Nöbetik yayın bildirimi" görevi). Bu yüzden kalite kontrolü ve yalnızca doğrulanmış bilgi kuralı her zamankinden sıkı uygulanır. Story'lerde çıkartma (anket, soru, link) kullanılmaz; çağrı metinle yapılır ("mesaj olarak gönder", "link profilde").
 

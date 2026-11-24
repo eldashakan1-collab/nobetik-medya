@@ -1,3 +1,16 @@
+# Reels dizileri — rehber
+
+## Seri planı (kullanıcı kararı, 24 Kasım)
+- **Bölüm 1–4 (28 Kas – 19 Ara 2026): yalnızca "Gece 03:17".** Takip alışkanlığı kurmak için.
+- **26 Aralık 2026'dan itibaren dönüşümlü:** her cumartesi sıradaki seri, şu döngüyle:
+  1. "Gece 03:17" (gece nöbeti hikâyesi — aşağıdaki rehber)
+  2. "Hemşire Sözlüğü" — sadece hemşirelerin bildiği bir cümle/kelime ("Bir bakıverir misin?", "Sakin geçsin", "Devirde bir şey yok"): büyük kinetik tipografi ile sözlük maddesi (kelime · okunuş · "gerçek anlamı") + aynı karakterlerle 2–3 saniyelik mini sahne. Mizahi, etiketlemeye uygun.
+  3. "Gündüz 08:00" — aynı karakterler, gün içi bir an: nöbet devri, vizit, ilaç saati, hasta yakını, servis koşturması. Mekân aynı istasyon, gündüz ışığı (açık gökyüzü, tint yok).
+  4. "POV" — üstte "POV:" ile başlayan tek cümle ("POV: Nöbet devrinde 'bir şey yok' dendi") + kısa, hızlı kurgulu sahne; trend formatın meslek versiyonu (trend ses yok).
+- **Özel gün önceliği:** o hafta bir özel gün varsa (26 Ara haftası Yılbaşı, Hemşireler Haftası 12–18 Mayıs, bayramlar) döngü yerine o güne özel bölüm yapılır; seri adı döngüdeki sıradaki seri olur.
+- Her seri ayrı numaralanır (ör. "HEMŞİRE SÖZLÜĞÜ · NO 1"); açılış kartı ve kapanış sorusu her seride var; karakterler (Defne, Can) ve çizim stili her seride aynı.
+- Performans: dört haftada bir Metricool Reels verilerine (izlenme, izlenme süresi, paylaşım, kaydetme) bak; en zayıf seriyi döngüden çıkarıp yerine yeni bir seri fikri dene ve bu dosyaya not düş.
+
 # "Gece 03:17" — dizi rehberi
 
 Haftalık 30 saniyelik animasyon Reels. Amaç tanıtım değil: hemşirelerin kendini gördüğü, paylaştığı, yorum yazdığı bir dizi. Nöbetik yalnızca son karede küçük logo.
@@ -19,7 +32,7 @@ Görsel stil (yapay zekâ görsel aracı için): yarı gerçekçi dijital illüs
 
 ## Yayınlanan bölümler
 KURAL: Bu tabloda tarihi o haftanın cumartesisine denk gelen bir bölüm varsa (Metricool'da olmasa bile) o hafta yeni Reels ÜRETME. Sıradaki bölüm numarası = tablodaki en büyük numara + 1.
-| No | Tarih | Ad | Konu | Kapanış sorusu | Dosya |
+| No | Tarih | Seri · Ad | Konu | Kapanış sorusu | Dosya |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 28 Kas 2026 | Sakin bir gece | Stajyer "Ne sakin bir gece" der, tüm ziller çalar | Senin servisinde yasaklı kelime ne? | reels/gece-0317-bolum-1-sesli.mp4 |
 | 2 | 5 Ara 2026 (kullanıcıya önceden gönderildi; Metricool'a KONMADI, kullanıcı kendisi paylaşacak) | Gece yemeği | 03:17'de yemek molası; her ilk lokmada bir zil; 06:52'de soğuk sarma, sıcak muhabbet | Senin serviste gece yemeği saat kaçta? | reels/gece-0317-bolum-2-sesli.mp4 |
