@@ -53,3 +53,13 @@ KURAL: Bu tabloda tarihi o haftanın cumartesisine denk gelen bir bölüm varsa 
 - Görselli bölümler "hareketli çizgi roman" tekniğiyle yapılır: görsel 2x büyütülür, kamera yavaş kayar/yaklaşır, sahneler arası geçiş, altyazı kutusu, görsel üstüne eklenen nesneler (ör. not kâğıdı), efekt sesleri. Şablon: reels/gece-0317-bolum-2-iki-masa.html.
 - Görsellerdeki yabancı dilde yazılar cv2.inpaint ile silinip Türkçe yazılır.
 - Aynı görseller art arda bölümlerde tekrar kullanılmaz; yeni görsel yoksa çizim stiline (tools/characters.py) dönülür.
+
+## Seslendirme (24 Kas 2026)
+- Sıra: 1) ElevenLabs (Can = Duygu, Defne = Esin, anlatıcı = Nergis) → 2) Speko/Cartesia (Can = Aykut, Defne = Azra, anlatıcı = Aylin) → 3) yalnızca efekt sesi.
+- Bir bölümde tek sağlayıcı. Bölüm 1 (28 Kas): Speko. Bölüm 2 (5 Ara, kullanıcıda): ElevenLabs.
+
+## Trend fikirleri (24 Kas 2026)
+- Zaman damgaları: "Bir gece nöbeti, 19:00 → 08:00" (Gece 03:17 Bölüm 3 adayı).
+- "Dear Santa": yılbaşı nöbeti dileği (Yılbaşı haftası özel bölümü).
+- "5 evre": "Nöbet listesi açıklanınca 5 evre".
+- "Not all angels are in heaven": "…bazıları 3. katta gece nöbetinde".
