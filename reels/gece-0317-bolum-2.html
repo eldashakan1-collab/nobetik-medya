@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8">
+<style>
+FONTCSS
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0B1430}
+svg{display:block}
+.cap{font-family:Inter,sans-serif;font-weight:800;fill:#FFFFFF}
+.bub{font-family:Inter,sans-serif;font-weight:700;fill:#111827}
+</style></head>
+<body>
+<svg id="s" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B2A4E"/><stop offset="1" stop-color="#0F1B38"/></linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="#0B1430"/>
+  <g id="cam">
+    <!-- room -->
+    <rect x="0" y="0" width="1080" height="1920" fill="url(#room)"/>
+    <rect x="0" y="1450" width="1080" height="470" fill="#0A1228"/>
+    <!-- window -->
+    <rect x="110" y="420" width="360" height="380" rx="14" fill="#0E1A3A" stroke="#33466F" stroke-width="10"/>
+    <rect id="sky" x="115" y="425" width="350" height="370" rx="10" fill="#14224A"/>
+    <circle id="sun" cx="290" cy="900" r="58" fill="#FBBF24" opacity="0"/>
+    <g id="moon"><path d="M380 520 A52 52 0 1 0 380 624 A42 42 0 1 1 380 520 Z" fill="#E0E7FF"/>
+      <circle cx="190" cy="500" r="3" fill="#C7D2FE"/><circle cx="240" cy="560" r="2.5" fill="#C7D2FE"/><circle cx="170" cy="650" r="2" fill="#C7D2FE"/></g>
+    <rect x="285" y="420" width="10" height="380" fill="#33466F"/>
+    <rect x="110" y="602" width="360" height="10" fill="#33466F"/>
+    <!-- call bell panel -->
+    <rect x="590" y="420" width="380" height="310" rx="18" fill="#16213F" stroke="#2C3B63" stroke-width="4"/>
+    <text x="780" y="462" text-anchor="middle" font-family="Inter" font-weight="700" font-size="22" fill="#7C8BB5" letter-spacing="3">HASTA ÇAĞRI</text>
+    <g id="bells"></g>
+    <!-- Defne (sitting) -->
+    <g id="defne">
+      <rect x="235" y="1060" width="190" height="200" rx="60" fill="#1E3A8A"/>
+      <path d="M300 1062 L330 1110 L360 1062 Z" fill="#F2C6A0"/>
+      <circle cx="330" cy="990" r="74" fill="#F2C6A0"/>
+      <path d="M256 985 Q262 905 330 902 Q400 905 404 985 Q392 940 330 935 Q270 940 256 985 Z" fill="#3B2A20"/>
+      <circle cx="330" cy="900" r="34" fill="#3B2A20"/>
+      <g id="dEyes"><ellipse id="dEl" cx="305" cy="992" rx="7" ry="8" fill="#111827"/><ellipse id="dEr" cx="356" cy="992" rx="7" ry="8" fill="#111827"/></g>
+      <path id="dMouth" d="M312 1030 Q330 1040 348 1030" stroke="#7C2D12" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <circle cx="290" cy="1018" r="10" fill="#F9A8A8" opacity="0.5"/><circle cx="370" cy="1018" r="10" fill="#F9A8A8" opacity="0.5"/>
+    </g>
+    <!-- Can (stajyer, standing) -->
+    <g id="can">
+      <rect x="-95" y="0" width="190" height="300" rx="70" fill="#60A5FA"/>
+      <path d="M-30 2 L0 50 L30 2 Z" fill="#E8B48C"/>
+      <circle cx="0" cy="-70" r="72" fill="#E8B48C"/>
+      <path d="M-74 -78 Q-70 -150 0 -148 Q74 -150 74 -80 Q50 -118 0 -116 Q-50 -118 -74 -78 Z" fill="#1F2937"/>
+      <ellipse cx="-25" cy="-66" rx="7" ry="8" fill="#111827"/><ellipse cx="25" cy="-66" rx="7" ry="8" fill="#111827"/>
+      <path id="cMouth" d="M-20 -30 Q0 -14 20 -30" stroke="#7C2D12" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <rect x="-20" y="150" width="40" height="56" rx="6" fill="#DBEAFE"/>
+      <text x="0" y="186" text-anchor="middle" font-family="Inter" font-weight="800" font-size="20" fill="#1D4ED8">ST</text>
+    </g>
+    <!-- desk -->
+    <rect x="80" y="1160" width="920" height="40" rx="8" fill="#334155"/>
+    <rect x="100" y="1200" width="880" height="250" fill="#1E293B"/>
+    <rect x="130" y="1240" width="300" height="160" rx="10" fill="#243349"/>
+    <!-- tea -->
+    <g id="tea"><path d="M450 1095 h70 v50 a20 20 0 0 1 -20 20 h-30 a20 20 0 0 1 -20 -20 z" fill="#F8FAFC"/>
+      <path d="M520 1110 q22 0 22 18 q0 18 -22 18" stroke="#F8FAFC" stroke-width="8" fill="none"/>
+      <path id="steam1" d="M470 1080 q-10 -20 0 -40 q10 -20 0 -40" stroke="#CBD5E1" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <path id="steam2" d="M500 1080 q-10 -20 0 -40 q10 -20 0 -40" stroke="#CBD5E1" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/></g>
+    <!-- food -->
+    <g id="food" transform="translate(-25 0)"><ellipse cx="640" cy="1150" rx="70" ry="16" fill="#E2E8F0"/>
+      <rect x="585" y="1112" width="110" height="40" rx="14" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="3"/>
+      <g fill="#4D7C0F"><rect x="598" y="1118" width="22" height="13" rx="6"/><rect x="624" y="1118" width="22" height="13" rx="6"/><rect x="650" y="1118" width="22" height="13" rx="6"/><rect x="610" y="1132" width="22" height="13" rx="6"/><rect x="636" y="1132" width="22" height="13" rx="6"/><rect x="662" y="1132" width="22" height="13" rx="6"/></g>
+      <path id="fsteam1" d="M610 1100 q-8 -18 0 -36 q8 -18 0 -36" stroke="#CBD5E1" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path id="fsteam2" d="M660 1100 q-8 -18 0 -36 q8 -18 0 -36" stroke="#CBD5E1" stroke-width="5" fill="none" stroke-linecap="round"/></g>
+    <!-- monitor -->
+    <rect x="880" y="930" width="160" height="130" rx="14" fill="#0B1220" stroke="#475569" stroke-width="8"/>
+    <rect x="945" y="1060" width="30" height="100" fill="#475569"/>
+    <path id="ecg" d="" stroke="#34D399" stroke-width="5" fill="none" stroke-linejoin="round"/>
+    <text id="bpm" x="1028" y="958" text-anchor="end" font-family="Inter" font-weight="800" font-size="26" fill="#34D399">72</text>
+    <!-- simit (morning) -->
+    <g id="simit" opacity="0"><circle cx="400" cy="1140" r="34" fill="none" stroke="#C2410C" stroke-width="20"/><circle cx="400" cy="1140" r="34" fill="none" stroke="#FDBA74" stroke-width="6" stroke-dasharray="4 8"/></g>
+    <!-- night tint -->
+    <rect id="tint" x="0" y="0" width="1080" height="1920" fill="#020617" opacity="0.18"/>
+  </g>
+  <!-- bubbles -->
+  <g id="b1" opacity="0"><rect x="300" y="690" width="680" height="120" rx="40" fill="#FFFFFF"/><path d="M740 808 l40 46 l-6 -46 z" fill="#FFFFFF"/>
+    <text x="640" y="766" text-anchor="middle" class="bub" font-size="44">Annem sarma yolladı abla!</text></g>
+  <g id="b2" opacity="0"><rect x="140" y="650" width="840" height="170" rx="44" fill="#FFFFFF"/><path id="b2tail" d="M330 818 l-30 44 l60 -44 z" fill="#FFFFFF"/>
+    <text id="b2a" x="560" y="720" text-anchor="middle" class="bub" font-size="42">Soğuk sarma,</text>
+    <text id="b2b" x="560" y="776" text-anchor="middle" class="bub" font-size="42">sıcak muhabbet.</text></g>
+  <!-- caption -->
+  <g id="capg" opacity="0"><rect id="capbg" x="70" y="200" width="940" height="150" rx="28" fill="#000000" opacity="0.38"/>
+    <text id="cap" x="540" y="296" text-anchor="middle" class="cap" font-size="58"></text></g>
+  <!-- big center text -->
+  <text id="big" x="540" y="1600" text-anchor="middle" class="cap" font-size="88" opacity="0"></text>
+  <!-- clock in corner -->
+  <g id="mini" opacity="0"><rect x="770" y="1520" width="250" height="96" rx="22" fill="#000000" opacity="0.45"/>
+    <text id="miniT" x="895" y="1588" text-anchor="middle" font-family="Inter" font-weight="900" font-size="58" fill="#FBBF24">03:18</text></g>
+  <!-- title card -->
+  <g id="title">
+    <rect width="1080" height="1920" fill="#0B1430"/>
+    <text x="540" y="760" text-anchor="middle" font-family="Inter" font-weight="700" font-size="34" fill="#93C5FD" letter-spacing="8">GECE NÖBETİ · BÖLÜM 2</text>
+    <text id="tclock" x="540" y="1010" text-anchor="middle" font-family="Inter" font-weight="900" font-size="250" fill="#FBBF24" letter-spacing="-6">03:17</text>
+    <text id="tsub" x="540" y="1130" text-anchor="middle" font-family="Fraunces" font-style="italic" font-size="76" fill="#E0E7FF" opacity="0">Gece yemeği.</text>
+  </g>
+  <!-- end card -->
+  <g id="end" opacity="0">
+    <rect width="1080" height="1920" fill="#0B1430"/>
+    <text x="540" y="780" text-anchor="middle" font-family="Inter" font-weight="700" font-size="34" fill="#93C5FD" letter-spacing="8">GECE 03:17</text>
+    <text x="540" y="930" text-anchor="middle" font-family="Inter" font-weight="900" font-size="92" fill="#FFFFFF">Senin serviste</text>
+    <text x="540" y="1040" text-anchor="middle" font-family="Inter" font-weight="900" font-size="80" fill="#FBBF24">gece yemeği saat kaçta?</text>
+    <text x="540" y="1160" text-anchor="middle" font-family="Inter" font-weight="500" font-size="40" fill="#CBD5E1">Yorumlara yaz, mola arkadaşını etiketle.</text>
+    <image href="LOGO" x="465" y="1290" width="150" height="39" opacity="0.75"/>
+  </g>
+</svg>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+const seg=(t,a,b)=>cl((t-a)/(b-a));
+const lerp=(a,b,x)=>a+(b-a)*x;
+function hex(c){return [1,3,5].map(i=>parseInt(c.substr(i,2),16))}
+function mix(a,b,x){const A=hex(a),B=hex(b);return 'rgb('+A.map((v,i)=>Math.round(lerp(v,B[i],x))).join(',')+')'}
+// bells
+const bells=$('bells');let bh='';
+for(let r=0;r<3;r++)for(let c=0;c<4;c++){const i=r*4+c,x=640+c*90,y=505+r*75;
+ bh+=`<circle id="bl${i}" cx="${x}" cy="${y}" r="24" fill="#26365E"/><text x="${x}" y="${y+9}" text-anchor="middle" font-family="Inter" font-weight="800" font-size="24" fill="#94A3B8">${i+1}</text>`}
+bells.innerHTML=bh;
+const caps=[[2.7,6.2,'03:17. Nihayet yemek molası.'],[6.2,9.0,'İlk lokma…'],[9.0,10.6,'…5 numara.'],[10.6,13.0,'Yemek bekleyebilir.'],[13.0,15.4,'03:41. Tekrar deneyelim.'],[15.4,16.6,'9 numara.'],[16.6,19.2,'Sarma soğudu. Çay soğudu.'],[19.6,22.6,'05:10. Kimse kıpırdamıyor…'],[22.8,25.4,'06:52. Gece yemeği servis edildi.']];
+function ecg(t,busy){let d='';const x0=892,w=136,y0=1010;
+ for(let i=0;i<=60;i++){const x=x0+w*i/60;const ph=((i/60)*1.3+t*0.8)%1;
+  let y=y0; if(ph>.45&&ph<.5)y-=36; else if(ph>=.5&&ph<.55)y+=16; else if(ph>.3&&ph<.38)y-=7;
+  d+=(i?'L':'M')+x.toFixed(1)+' '+y.toFixed(1)}
+ return d}
+// presence: 1 = at station, 0 = away. Leaves at 9.3 and 16.0, returns 13.0 and 19.2
+function pres(t){ if(t<9.3)return 1; if(t<9.9)return 1-ease(seg(t,9.3,9.9)); if(t<12.8)return 0; if(t<13.4)return ease(seg(t,12.8,13.4)); if(t<16.0)return 1; if(t<16.6)return 1-ease(seg(t,16.0,16.6)); if(t<19.0)return 0; return ease(seg(t,19.0,19.6)) }
+function setT(t){
+ $('title').setAttribute('opacity',1-seg(t,2.2,2.6));
+ $('tsub').setAttribute('opacity',ease(seg(t,1.0,1.6)));
+ let sc=1+0.06*ease(seg(t,19.6,21))-0.06*ease(seg(t,22.4,23.2));
+ $('cam').setAttribute('transform',`translate(540 1100) scale(${sc}) translate(-540 -1100)`);
+ const m=ease(seg(t,22.6,24));
+ $('sky').setAttribute('fill',mix('#14224A','#FDBA74',m)); $('moon').setAttribute('opacity',1-m);
+ $('sun').setAttribute('opacity',m); $('sun').setAttribute('cy',lerp(900,700,m));
+ $('tint').setAttribute('opacity',lerp(0.18,0,m)); $('simit').setAttribute('opacity',0);
+ // steam: tea & food hot until 16.6, then cold
+ const hot=t<16.6; const hf=hot?1:1-seg(t,16.6,17.6);
+ ['steam1','steam2','fsteam1','fsteam2'].forEach((s,k)=>{$(s).setAttribute('opacity',(0.35+0.3*Math.sin(t*3+k))*hf);$(s).setAttribute('transform',`translate(0 ${-((t*20+k*15)%20)})`)});
+ $('ecg').setAttribute('d',ecg(t,false)); $('bpm').textContent='72';
+ // bells: 5 (idx4) 9.0-10.6 ; 9 (idx8) 15.4-16.6
+ for(let i=0;i<12;i++){let on=(i===4&&t>9.0&&t<10.6)||(i===8&&t>15.4&&t<16.6);const blink=on&&Math.floor(t*6)%2===0;
+  $('bl'+i).setAttribute('fill',on?(blink?'#EF4444':'#B91C1C'):'#26365E')}
+ // characters
+ const p=pres(t);
+ const canIn=ease(seg(t,3.6,4.6)); const sit=ease(seg(t,6.0,6.8))*(t<9.3?1:0)+ (t>=13.0&&t<16.0?1:0)+ (t>=19.2?ease(seg(t,19.2,19.8)):0);
+ const cx=lerp(1260,780,canIn)-(1-p)*520*(t>4.6?1:0);
+ $('can').setAttribute('transform',`translate(${cx} ${985+Math.min(1,sit)*95})`);
+ $('can').setAttribute('opacity',t>4.6?p:1);
+ $('defne').setAttribute('transform',`translate(${-(1-p)*420} 0)`); $('defne').setAttribute('opacity',p);
+ // expressions
+ const startled=(t>9.0&&t<9.4)||(t>15.4&&t<15.9); const look=t>19.8&&t<22.6;
+ ['dEl','dEr'].forEach(e=>{$(e).setAttribute('ry',startled?14:8);$(e).setAttribute('rx',startled?11:7);$(e).setAttribute('cy',look?984:992)});
+ $('dMouth').setAttribute('d', startled?'M318 1036 Q330 1024 342 1036 Q330 1046 318 1036':(t>23?'M308 1026 Q330 1050 352 1026':'M312 1030 Q330 1040 348 1030'));
+ $('cMouth').setAttribute('d', startled?'M-12 -24 Q0 -40 12 -24 Q0 -16 -12 -24':(look?'M-16 -28 L16 -28':'M-20 -30 Q0 -14 20 -30'));
+ // bubbles
+ $('b1').setAttribute('opacity',ease(seg(t,4.7,5.0))*(1-seg(t,6.3,6.5)));
+ $('b2').setAttribute('opacity',ease(seg(t,25.4,25.7))*(1-seg(t,28.3,28.5)));
+ const second=t>=27.0; $('b2a').textContent=second?'Bu kahvaltı mı oldu':'Soğuk sarma,'; $('b2b').textContent=second?'şimdi abla?':'sıcak muhabbet.';
+ $('b2tail').setAttribute('d', second?'M740 818 l40 40 l-6 -40 z':'M330 818 l-30 44 l60 -44 z');
+ // captions
+ let c=caps.find(k=>t>=k[0]&&t<k[1]);
+ if(c){$('cap').textContent=c[2];const a=Math.min(seg(t,c[0],c[0]+.25),1-seg(t,c[1]-.2,c[1]));$('capg').setAttribute('opacity',a);
+  const w=Math.min(960,c[2].length*31+120);$('capbg').setAttribute('x',540-w/2);$('capbg').setAttribute('width',w)} else $('capg').setAttribute('opacity',0);
+ // big center text: ding
+ let big='',ba=0; if(t>=9.0&&t<10.0){big='DING!';ba=1-seg(t,9.6,10.0)} else if(t>=15.4&&t<16.4){big='DING!';ba=1-seg(t,16.0,16.4)}
+ $('big').textContent=big;$('big').setAttribute('opacity',ba);
+ // mini clock
+ const fmt=v=>'0'+Math.floor(v/60)+':'+String(v%60).padStart(2,'0');
+ const segs=[[2.6,9.3,197,197],[9.3,13.0,197,221],[13.0,16.6,221,221],[16.6,19.4,221,310],[19.4,22.6,310,310],[22.6,23.6,310,412],[23.6,28.4,412,412]];
+ let mt=null; for(const k of segs){if(t>=k[0]&&t<k[1]){mt=fmt(Math.round(lerp(k[2],k[3],ease(seg(t,k[0],k[1])))));break}}
+ $('mini').setAttribute('opacity',mt?1:0); if(mt)$('miniT').textContent=mt;
+ $('end').setAttribute('opacity',ease(seg(t,28.4,28.8)));
+}
+window.setT=setT; setT(0);
+</script>
+</body></html>

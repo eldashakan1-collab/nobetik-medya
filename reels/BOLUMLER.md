@@ -18,14 +18,15 @@ Görsel stil (yapay zekâ görsel aracı için): yarı gerçekçi dijital illüs
 - Gerekirse yeni yan karakterler eklenebilir; tasarım `reels/gece-0317-bolum-1.html`'deki düz vektör stilinde.
 
 ## Yayınlanan bölümler
+KURAL: Bu tabloda tarihi o haftanın cumartesisine denk gelen bir bölüm varsa (Metricool'da olmasa bile) o hafta yeni Reels ÜRETME. Sıradaki bölüm numarası = tablodaki en büyük numara + 1.
 | No | Tarih | Ad | Konu | Kapanış sorusu | Dosya |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 28 Kas 2026 | Sakin bir gece | Stajyer "Ne sakin bir gece" der, tüm ziller çalar | Senin servisinde yasaklı kelime ne? | reels/gece-0317-bolum-1-sesli.mp4 |
+| 2 | 5 Ara 2026 (kullanıcıya önceden gönderildi; Metricool'a KONMADI, kullanıcı kendisi paylaşacak) | Gece yemeği | 03:17'de yemek molası; her ilk lokmada bir zil; 06:52'de soğuk sarma, sıcak muhabbet | Senin serviste gece yemeği saat kaçta? | reels/gece-0317-bolum-2-sesli.mp4 |
 
 ## Fikir havuzu (kullanıldıkça listeden düş)
 - Nöbet devri: "Bir şey yok" denen servis
 - "Bir bakıverir misin?" — bir dakikalık iş, kırk dakika
-- Gece yemeği: dört kişi, bir simit, kimse oturamıyor
 - 12 saat sonra ayakkabıyı çıkarma anı
 - Sabaha karşı 05:00 sessizliği ve ilk kuş sesi
 - Yeni yatış saat 07:55'te gelir
