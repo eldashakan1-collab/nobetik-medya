@@ -13,7 +13,11 @@ Sıfır onay dönemi bitti. Daha önce onaylanıp sıraya alınmış içerikler 
 | Cumartesi | Reels, 30 sn çizim animasyon, seslendirmeli | 10:00 |
 Pazartesi, Çarşamba ve Pazar'ın hedef günü boş: o günler üretim yok, kullanıcıya mesaj yok.
 
+## Onay takvimi sayfası
+https://claude.ai/artifact/6aVjrvGnLgUtYimYbizT59 — Metricool'dan canlı okur; kullanıcı buradan "Onayla" (draft:false yapar) ya da "Revize iste" der. Revize istenince taslağın açıklaması `[REVİZE] <not>\n---\n<asıl açıklama>` biçimine getirilir ve taslak bekler.
+
 ## Her gün 05:00'te
+0. REVİZELER: getScheduledPosts ile bugünden +30 güne kadar bak. Açıklaması "[REVİZE]" ile başlayan her taslak için notu uygula (görseli/videoyu/metni düzelt, yeniden yükle), updateScheduledPost ile draft:TRUE kalacak şekilde yeni medya ve temiz açıklamayı yaz (Story'de text ""), sonra kullanıcıya bu içeriği yeniden onaya sun.
 1. HEDEF = bugün + 7 gün. Hedefin haftanın hangi günü olduğuna bak; tabloda slot yoksa sessizce bitir.
 2. Metricool getScheduledPosts (brandId "8333739", timezone Europe/Istanbul) ile hedef günü kontrol et. O slot için zaten bir içerik (taslak ya da zamanlanmış) varsa yeniden üretme; yalnızca hâlâ taslaksa onu tekrar onaya sun.
 3. Repo: add_repo (eldashakan1-collab/nobetik-medya, push), `git clone --depth 1` → /home/claude/nobetik-medya. Önce STRATEJI.md, reels/BOLUMLER.md ve bu dosyayı oku, harfiyen uy.
@@ -26,6 +30,6 @@ Pazartesi, Çarşamba ve Pazar'ın hedef günü boş: o günler üretim yok, kul
 6. Yükle: benzersiz adlarla gorseller/ ya da reels/, commit (sonunda "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"), push, her raw URL için curl 200.
 7. Metricool'a **TASLAK** olarak ekle: createScheduledPost, date = hedef gün ve saat (+03:00), info: **draft TRUE**, autoPublish TRUE, providers instagram, media raw URL'ler, mediaAltText, publicationDate, descendants [], firstCommentText "", shortener false, smartLinkData {ids:[]}; instagramData POST/STORY/REEL (REEL'de showReelOnFeed true + videoCoverMilliseconds 1500; STORY'de text ""), isAiGenerated false. (Metricool ücretsiz plan "onaya gönder" özelliğini desteklemiyor; taslak yayınlanmaz.)
 8. Kullanıcıya ONAY MESAJI gönder (SendUserFile ile görseller/video, sonra SendUserMessage):
-   "📅 Onay: <gün tarih saat> · <tür>" + kısa konsept + açıklama metninin tamamı + "Onaylıyorsan 'onay' yaz; değişiklik istiyorsan ne değişsin yaz. İstersen Metricool'da taslağı açıp 'Zamanla'ya basarak da onaylayabilirsin." Aynı gün daha önce onaylanmamış taslak varsa onları da listele.
+   "📅 Onay: <gün tarih saat> · <tür>" + kısa konsept + açıklama metninin tamamı + "Onay takviminden onayla ya da revize iste: https://claude.ai/artifact/6aVjrvGnLgUtYimYbizT59 (buraya 'onay' yazman da yeterli)." Aynı gün daha önce onaylanmamış taslak varsa onları da listele.
 9. Kullanıcı bu oturumda "onay" derse: getScheduledPosts ile taslağı bul, updateScheduledPost ile **draft FALSE** yap (geri kalan her alan aynı), doğrula ve "✅ Sıraya alındı" de. Değişiklik isterse düzelt, yeniden yükle, taslağı güncelle, tekrar onaya sun.
 10. Hata olursa kısa Türkçe mesajla bildir; yine de onaylanmamış hiçbir şeyi yayına alma.
