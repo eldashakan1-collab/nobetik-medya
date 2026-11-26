@@ -1,0 +1,8 @@
+Araç testi - 2026-11-26
+
+- mcp__claude-artifacts__ : YOK (upload_asset, db_write, db_query bulunamadı; yerine yerleşik Artifact ve ArtifactData araçları var)
+- mcp__ElevenLabs__ : VAR (örn. creative_generate_speech, creative_list_voices, creative_generate_image, creative_generate_video, creative_transcribe_audio, agents_* araçları)
+- mcp__Speko__ : VAR (örn. audio_synthesize, audio_transcribe, voices_list, voice_clones_create, agents_create, sessions_phone_create)
+- mcp__Metricool : VAR (mcp__Metricool_Social_Media_Management__: createScheduledPost, getScheduledPosts, updateScheduledPost, getBrandSettings, getBestTimeToPostByNetwork, getAnalyticsDataByMetrics)
+
+Not: add_repo aracı bu oturumda yoktu; depo zaten /home/claude/nobetik-medya'da klonlu ve erişim kapsamındaydı.
