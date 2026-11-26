@@ -6,11 +6,11 @@ https://claude.ai/artifact/NqAaBupVgsZD4CkNzSgzvi
 ## Haftalık ritim (onaylı)
 | İçerik | Gün | Saat (Europe/Istanbul) | Metricool |
 | --- | --- | --- | --- |
-| 2 gönderi (tek görsel ya da karusel; biri tercihen karusel) | Salı ve Cuma | 10:00 | POST, draft:false, autoPublish:true |
-| 1 Story (1–3 kare, çıkartmasız) | Perşembe | 19:00 | STORY, draft:false, autoPublish:true |
-| 1 Reels — 19 Aralık'a kadar "Gece 03:17", sonra dönüşümlü seriler (reels/BOLUMLER.md) | Cumartesi | 10:00 | REEL, draft:false, autoPublish:true |
+| 2 gönderi (tek görsel ya da karusel; biri tercihen karusel) | Salı ve Cuma | 10:00 | POST, önce draft:true (onaydan sonra false) |
+| 1 Story (1–3 kare, çıkartmasız) | Perşembe | 19:00 | STORY, önce draft:true (onaydan sonra false) |
+| 1 Reels — 19 Aralık'a kadar "Gece 03:17", sonra dönüşümlü seriler (reels/BOLUMLER.md) | Cumartesi | 10:00 | REEL, önce draft:true (onaydan sonra false) |
 
-SIFIR ONAY (kullanıcı kararı, 24 Kasım): her şey otomatik yayınlanır. Kullanıcıya yalnızca paylaşım bildirimi gider ("Nöbetik yayın bildirimi" görevi). Bu yüzden kalite kontrolü ve yalnızca doğrulanmış bilgi kuralı her zamankinden sıkı uygulanır. Story'lerde çıkartma (anket, soru, link) kullanılmaz; çağrı metinle yapılır ("mesaj olarak gönder", "link profilde").
+1 HAFTA ÖNCEDEN ONAY (kullanıcı kararı, 26 Kasım; 24 Kasım'daki sıfır onay kararının yerine geçer): her içerik yayından 7 gün önce taslak olarak hazırlanır ve kullanıcıya onaya sunulur; onaylanınca sıraya alınır. Ayrıntılar OTOMASYON.md'de. Story'lerde çıkartma (anket, soru, link) kullanılmaz; çağrı metinle yapılır ("mesaj olarak gönder", "link profilde").
 
 ## Marka
 - Ad yalnızca **Nöbetik**. "NöbetiX" asla kullanılmaz.
