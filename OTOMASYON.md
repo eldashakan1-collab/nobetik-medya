@@ -14,10 +14,10 @@ Sıfır onay dönemi bitti. Daha önce onaylanıp sıraya alınmış içerikler 
 Pazartesi, Çarşamba ve Pazar'ın hedef günü boş: o günler üretim yok, kullanıcıya mesaj yok.
 
 ## Onay takvimi sayfası
-https://claude.ai/artifact/6aVjrvGnLgUtYimYbizT59 — Metricool'dan canlı okur; kullanıcı buradan "Onayla" (draft:false yapar) ya da "Revize iste" der. Revize istenince taslağın açıklaması `[REVİZE] <not>\n---\n<asıl açıklama>` biçimine getirilir ve taslak bekler.
+https://claude.ai/artifact/6aVjrvGnLgUtYimYbizT59 — Metricool'dan canlı okur; kullanıcı buradan "Onayla" (draft:false yapar) ya da "Revize iste" der. Revize istenince içerik taslağa döner ve İLK görselin alt metni (mediaAltText[0]) `[REVİZE] <not>\n---\n<asıl alt metin>` biçimine getirilir (Instagram Story'de açıklama metnine izin verilmediği için not alt metinde tutulur).
 
 ## Her gün 05:00'te
-0. REVİZELER: getScheduledPosts ile bugünden +30 güne kadar bak. Açıklaması "[REVİZE]" ile başlayan her taslak için notu uygula (görseli/videoyu/metni düzelt, yeniden yükle), updateScheduledPost ile draft:TRUE kalacak şekilde yeni medya ve temiz açıklamayı yaz (Story'de text ""), sonra kullanıcıya bu içeriği yeniden onaya sun.
+0. REVİZELER: getScheduledPosts ile bugünden +30 güne kadar bak. mediaAltText[0] ya da açıklaması "[REVİZE]" ile başlayan her taslak için notu uygula (görseli/videoyu/metni düzelt, yeniden yükle), updateScheduledPost ile draft:TRUE kalacak şekilde yeni medya, temiz açıklama ve "[REVİZE] …---" kısmı silinmiş alt metni yaz (Story'de text ""), sonra kullanıcıya bu içeriği yeniden onaya sun.
 1. HEDEF = bugün + 7 gün. Hedefin haftanın hangi günü olduğuna bak; tabloda slot yoksa sessizce bitir.
 2. Metricool getScheduledPosts (brandId "8333739", timezone Europe/Istanbul) ile hedef günü kontrol et. O slot için zaten bir içerik (taslak ya da zamanlanmış) varsa yeniden üretme; yalnızca hâlâ taslaksa onu tekrar onaya sun.
 3. Repo: add_repo (eldashakan1-collab/nobetik-medya, push), `git clone --depth 1` → /home/claude/nobetik-medya. Önce STRATEJI.md, reels/BOLUMLER.md ve bu dosyayı oku, harfiyen uy.
